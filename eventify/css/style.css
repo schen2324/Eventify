@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background: #F7FDFD;
+}
+#politica {
+    background: lavenderblush;
+}
+#home {
+    background: #F7FDFD;
+}
+#welcome {
+    background-color: #F7FDFD;
+}
+#start img {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    top: 25%;
+    left: 30%;
+}
+#start p {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 45%;
+    left: 19%;
+    color: #B5B5B5;
+    font-weight: 100;
+}
+.botonera {
+    background: #1ED4A9;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.botonera ul li {
+    display: block;
+    width: 20vw;
+    height: 10vh;
+    float: left;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.botonera ul li:hover {
+    background: #459683;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.botonera .guardado {
+    background-image: url(../img/Botón-Guardados.svg);
+}
+.botonera .guardado:hover {
+    background-image: url(../img/Botón-Guardados.svg);
+}
+.botonera .reservado {
+    background-image: url(../img/Botón-Reservados.svg);
+}
+.botonera .reservado:hover {
+    background-image: url(../img/Botón-Reservados.svg);
+}
+.botonera .home {
+    background-image: url(../img/Botón-home.svg);
+}
+.botonera .home:hover {
+    background-image: url(../img/Botón-home.svg);
+}
+.botonera .categoria {
+    background-image: url(../img/Botón-Categorias.svg);
+}
+.botonera .categoria:hover {
+    background-image: url(../img/Botón-Categorias.svg);
+}
+.botonera .chats {
+    background-image: url(../img/Botón-Chats.svg);
+}
+.botonera .chats:hover {
+    background-image: url(../img/Botón-Chats.svg);
+}
+.cabeza {
+    width: 100vw;
+    height: 14vh;
+    background-image: url(../img/cabeza.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.cabeza ul li {
+    width: 33.33vw;
+    height: 14vh;
+    display: block;
+    float: left;
+    background-position: 30% 40%;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+.cabeza .ajustes {
+    background-image: url(../img/Botón-Preferencias.svg);
+}
+.cabeza .eventify {
+    font-size: 1rem;
+    color: #F7FDFD;
+    text-align: center;
+    line-height: 7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cabeza .perfil {
+    background-image: url(../img/Botón-Perfil.svg);
+    background-position: 70% 45%;
+}
+
+/* welcome */
+.welcomefoto {
+    width: 120%;
+    height: 55vh;
+    border-radius: 50%;
+    position: fixed;
+    left: -10%;
+    top: -20vh;
+    background-image: url(../img/Enmascarar\ grupo.png);
+    background-position: center bottom;
+    background-size: 140%;
+}
+.logo_eventify {
+    width: 12rem;
+    height: 12rem;
+    top: 40%;
+    left: 26%;
+    position: absolute;
+    margin: auto;
+}
+#iniciar, #registrar, #user, #admin {
+    display: block;
+    position: absolute;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F7FDFD;
+    top: 80%;
+    left: 10%;
+    border-radius: 20px;
+    background: #1ED4A9;
+    border: none;
+    box-shadow:  3px 3px 8px lightgrey;
+}
+#iniciar:hover, #registrar:hover, #user:hover {
+    background: #459683;
+}
+#registrar, #user {
+    top: 70%;
+}
+#admin {
+    background: #F8AC4F;
+}
+#admin:hover {
+    background: #E09539;
+}
+
+/* Login */
+.header {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/header-login.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.back {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    border: none;
+    background-color: transparent;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/back.svg);
+}
+.page {
+    position: absolute;
+    width: 100%;
+    left: 7%;
+    top: 11vh;
+    font-size: 2.5rem;
+    color:#F7FDFD;
+    font-weight: 500;
+    font-family: Krungthep;
+}
+#register .page {
+    left: 15%;
+}
+
+/* home listas */
+.blogs {
+    width: 80%;
+    height: 200vh;
+    margin: auto;
+    position: absolute;
+    top: 8rem;
+    left: 10%;
+    z-index: 1;
+}
+.blog {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #F7FDFD;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    border: solid 2px #1ED4A9;
+}
+.fotoblog {
+    width: 100%;
+    height: 70%;
+    background-color: red;
+    border-radius: 19px 19px 0 0;
+    background-image: url(../img/tres-hermosas-chicas-sonrientes-posando-fiesta-holi.png);
+    background-size: cover;
+}
+#home h2, #home p {
+    position: relative;
+    left: 15px;
+}
+#home h2 {
+    font-weight: 400;
+    top: 15px;
+}
+#home p {
+    width: 100%;
+    top: 35px;
+    font-weight: 200;
+    left: 35px;
+    font-size: 0.9rem;
+}
+.iconos {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    bottom: 0;
+    z-index: 30;
+}
+.horario, .direccion, .autor {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    left: 15px;
+    top: 42px;
+    margin-top: 2.5px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.horario {
+    background-image: url(../img/calendar_outline.svg);
+}
+.direccion {
+    background-image: url(../img/Icon\ gis-poi-o.svg);
+    background-size: 70%;
+}
+.autor {
+    background-image: url(../img/bxs-user-circle.svg);
+}
+.likeit {
+    appearance: none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/heart_outline.svg);
+    background-size: contain;
+    right: 15px;
+
+}
+.likeit:checked {
+    background-image: url(../img/heart_outline_relleno.svg);
+    background-size: contain;
+
+
+
+}
