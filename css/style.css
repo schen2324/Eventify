@@ -9,7 +9,7 @@ body {
 #politica {
     background: lavenderblush;
 }
-#home {
+#home_listas {
     background: #F7FDFD;
 }
 #welcome {
@@ -117,6 +117,55 @@ body {
     background-position: 70% 45%;
 }
 
+/* modo de visualización */
+.modos {
+    width: 188px;
+    height: 52px;
+    background-color: #1ED4A9;
+    position: fixed;
+    bottom: 87px;
+    left: 100px;
+    border-radius: 20px 20px 0 0;
+    z-index: 100;
+}
+.modo {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+    border: 2px solid #F7FDFD;
+}
+.modo:hover {
+    background-color: #459683;
+}
+.modo.listas {
+    background-image: url(../img/menu-hamburger_broken.svg);
+    border-right: none;
+    border-left: none;
+}
+.modo.calendario {
+    background-image: url(../img/calendar_outline_blanco.svg);
+    border-radius: 20px 0 0 0;
+}
+.modo.mapa {
+    background-image: url(../img/Icon-gis-poi-o-blanco.svg);
+    background-size: 40%;
+    border-radius: 0 20px 0 0;
+}
+#home_listas .modo.listas {
+    background-color: #459683;
+}
+#home_maps .modo.mapa {
+    background-color: #459683;
+}
+#home_calendario .modo.calendario {
+    background-color: #459683;
+}
+
+
 /* welcome */
 .welcomefoto {
     width: 120%;
@@ -165,7 +214,7 @@ body {
     background: #E09539;
 }
 
-/* Login */
+/* header grande */
 .header {
     width: 100%;
     height: 30vh;
@@ -230,15 +279,15 @@ body {
     background-image: url(../img/tres-hermosas-chicas-sonrientes-posando-fiesta-holi.png);
     background-size: cover;
 }
-#home h2, #home p {
+#home_listas h2, #home_listas p {
     position: relative;
     left: 15px;
 }
-#home h2 {
+#home_listas h2 {
     font-weight: 400;
     top: 15px;
 }
-#home p {
+#home_listas p {
     width: 100%;
     top: 35px;
     font-weight: 200;
@@ -273,7 +322,7 @@ body {
 .autor {
     background-image: url(../img/bxs-user-circle.svg);
 }
-.likeit {
+.corazon {
     appearance: none;
     position: absolute;
     width: 25px;
@@ -281,12 +330,388 @@ body {
     background-image: url(../img/heart_outline.svg);
     background-size: contain;
     right: 15px;
-
 }
-.likeit:checked {
+.corazon:checked {
     background-image: url(../img/heart_outline_relleno.svg);
+}
+.share {
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    position: absolute;
+    background-image: url(../img/share-alt.svg);
     background-size: contain;
+    bottom: 15px;
+    right: 15px;
+}
+label {
+    width: 100%;
+    height: 100%;
+    background: lightgrey;
+    opacity: 1;
+}
 
+/* hearder normal */
+.header.normal {
+    width: 100vw;
+    height: 14vh;
+    background-image: url(../img/cabeza.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.back.normal {
+    top: 30px;
+}
+.page.normal {
+    top: 40px;
+    left: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
 
+/* Perfil */
+.perfil {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+.fotoperfil {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #459683;
+    top: 20%;
+    border-radius: 50%;
+    margin: auto;
+}
+.subirfoto {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #1ED4A9;
+    top: 15%;
+    border-radius: 50%;
+    left: 56%;
+    border: 4px solid #F7FDFD;
+    color: #F7FDFD;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.form {
+    position: relative;
+    width: 100%;
+    height: 53vh;
+    background-color: #F7FDFD;
+    border: 2px solid #1ED4A9;
+    border-radius: 20px;
+    top: 20%;
+}
+#miperfil label {
+    background-color: transparent;
+    color: #B5B5B5;
+    position: relative;
+    left: 5%;
+    top: 1%;
+}
+#miperfil input[type=text]{
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #1ED4A9;
+    width: 90%;
+    height: 30px;
+    left: 5%;
+    top: 1%;
+    margin-bottom: 1%;
+}
+#miperfil input[type=text]:focus {
+    border: #1ED4A9;
+}
+.cuenta {
+    position: relative;
+    top: 21%;
+    width: 100%;
+}
+.cuenta li {
+    position: relative;
+    float: left;
+    list-style: none;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #1ED4A9;
+    text-decoration: underline solid #1ED4A9;
+}
+.cuenta .guardar {
+    float: right;
+}
 
+/* home calendario */
+#home_calendario .anuncio {
+    width: 100vw;
+    height: 40vh;
+    background-image: url(../img/tres-hermosas-chicas-sonrientes-posando-fiesta-holi.png);
+    position: relative;
+    bottom: 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+#home_calendario .cuadropaco{
+    width: 20rem;
+    height: 8rem;
+    border-radius: 1.5rem;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(3px);
+    position: relative;
+    top: 10.5rem;
+    margin: 0 auto;
+    z-index: -9;
+}
+#home_calendario h2{
+    color: white;
+    opacity: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+#home_calendario .flechaizq{
+    height: 1.313rem;
+    width: 1.313rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 0.5rem;
+    background-image: url(../img/flechaizq.svg);
+}
+#home_calendario .flechader{
+    height: 1.313rem;
+    width: 1.313rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 18rem;
+    background-image: url(../img/flechader.svg);
+}
+
+#home_calendario .contbolitas{
+    width: 5rem;
+    height: 1rem;
+    position: relative;
+    left: 10.5rem;
+    bottom: 11.6rem;
+}
+#home_calendario .bolitas{
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background: white;
+    float: left;
+    margin: 0.140rem;
+}
+#home_calendario .verde{
+    background: #1ED4A9;
+}
+
+#home_calendario .ciudades{
+    width: 21.375rem;
+    height: 2.313rem;
+    background-color: white;
+    box-shadow: 3px 3px 8px lightgrey;
+    position: relative;
+    bottom: 11rem;
+    left: 1.6rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+#home_calendario h3{
+    color: #1ED4A9;
+    font-size: 1rem;
+    float: left;
+    margin: 0.5rem 1rem 0 1rem;
+    font-weight: 400;
+}
+#home_calendario .cursiva{
+    float: right;
+    text-decoration: underline;
+    font-style: italic;
+}
+#home_calendario .flechaizqmes{
+    height: 1.313rem;
+    width: 1.313rem;
+    position: absolute;
+    top: 22.5rem;
+    left: 5rem;
+    background-image: url(../img/flechaizq.svg);
+}
+#home_calendario .meses{
+    color: #1ED4A9;
+    position: relative;
+    bottom: 11.5rem;
+}
+#home_calendario .flechadermes{
+    height: 1.313rem;
+    width: 1.313rem;
+    position: absolute;
+    top: 22.5rem;
+    left: 18.4rem;
+    background-image: url(../img/flechader.svg);
+}
+#home_calendario .fecha{
+    position: relative;
+    margin: 0.5rem;
+    bottom: 11.5rem;
+    left: 9rem;
+}
+
+#home_calendario .contenedorcajitas{
+    width: 22.5rem;
+    position: absolute;
+    bottom: -47rem;
+    left: 1rem;
+}
+#home_calendario .cajitas{
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #B7F1E5;
+    border: #1ED4A9 1px solid;
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+    float: left;
+}
+#home_calendario h4{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 6rem;
+    color: white;
+}
+#home_calendario .oscuro{
+    width: 6.30rem;
+    height: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    border: #1ED4A9 1px solid;
+    position: relative;
+    bottom: 1.5rem;
+    right: 0.1rem;
+    background: #F7FDFD;
+}
+#home_calendario .blog_top {
+    position: absolute;
+    top: 8rem;
+}
+
+/* home maps */
+
+#home_maps iframe{
+    width: 100%;
+    height: 48rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+/* login user */
+#login_user .email input{
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 290px;
+    height: 40px;  
+    border-radius: 5px;
+    border-color: #1ED4A9;
+    background-color: #F7FDFD; 
+}
+
+#login_user .password input{
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 290px;
+    height: 40px;  
+    border-radius: 5px;
+    border-color: #1ED4A9;
+    background-color: #F7FDFD; 
+}
+
+#login_user .email p{
+    margin-top: 110px;
+    margin-left: 50px;
+    color: grey;
+}
+
+#login_user .password p{
+    margin-top: 30px;
+    margin-left: 50px;
+    color: grey;
+}
+
+#login_user .text h3{
+    margin-left: 170px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #1ED4A9;
+    font-style: italic;
+}
+
+.text_cuenta{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 145px;
+    margin-left: 60px;
+}
+#login_user .page.normal {
+    left: 130px;
+}
+#login_user #iniciar {
+    top: 82%;
+}
+#login_user .blog_iniciar{
+    position: absolute;
+    top: 5rem;
+}
+
+/* olivida la contraseña */
+#login_olivida .page.normal{
+    left: 90px;
+    font-size: 1.5rem;
+}
+.verificar input{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 290px;
+    height: 40px;  
+    border-radius: 5px;
+    border-color: #1ED4A9;
+    background-color: #F7FDFD; 
+}
+ .verificar p{
+    margin-top: 170px;
+    margin-left: 50px;
+    width: 300px;
+    color: grey;
+}
+#login_olivida #iniciar{
+    top: 50%;
+}
+
+/* Verificar contraseña */
+
+#login_verificar .page.normal{
+    left: 120px;
+    font-size: 1.5rem;
+}
+#login_verificar .codigo {
+    position: relative;
+    top: 10rem;
+    width: 80%;
+    margin: auto;
+}
+#login_verificar .text_cuenta {
+    margin-left: 0px;
+}
+#login_verificar #iniciar {
+    top: 45%;
 }

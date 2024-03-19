@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="../cache.manifest">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabe=no">
-    <title>Sintesi</title>
+    <title>Home_listas | Eventify</title>
+
+    <link rel="icon" type="image/x-icon" href="../img/Logo-Eventify.ico">
+    
+    <meta name="theme-color" content="#FF9933">
+    <meta name="msapplication-navbutton-color" content="#FF9933">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FF9933">
+    <link rel="icon" sizes="192x192" href="../img/Logo Eventify.svg">
+    <link rel="icon" sizes="512x512" href="../img/Logo Eventify.svg">
+    <link rel="apple-touch-icon" href="../img/Logo Eventify.svg">
+
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/barra.css">
 </head>
-<body id="home">
+<body id="home_listas">
     <div class="cabeza">
         <ul>
             <li class="ajustes"></li>
             <li class="eventify"><h1>Eventify</h1></li>
-            <li class="perfil"></li>
+            <li class="perfil" onclick="document.location='06perfil.html'"></li>
         </ul>
     </div>
     <div class="botonera">
@@ -24,14 +35,19 @@
             <li class="categoria"></li>
             <li class="chats"></li>
         </ul>
+        <label class="modos">
+                <div class="modo calendario" onclick="document.location='05home_calendario.html'"></div>
+                <div class="modo listas" onclick="document.location='05home_listas.html'"></div>
+                <div class="modo mapa" onclick="document.location='05home_maps.html'"></div>
+        </label>
     </div>
     <div class="blogs">
         <div class="blog">
             <div class="fotoblog"></div>
             <div class="iconos">
-                <input type="checkbox" name="like" class="likeit">
+                <input type="checkbox" name="like" class="corazon">
                 <div class="compartir">
-                    
+                    <input type="checkbox" name="share" class="share">
                 </div>
                 <div class="horario"></div>
                 <div class="direccion"></div>

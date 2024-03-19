@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabe=no">
-    <title>Iniciar Sesión | Eventify</title>
+    <title>Verificar la contraseña</title>
 
     <link rel="icon" type="image/x-icon" href="../img/Logo-Eventify.ico">
     
@@ -19,13 +19,19 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/barra.css">
 </head>
-<body id="login">
-    <div class="header">
-        <input type="button" class="back" onclick="document.location='01welcome.html'">
-        <p class="page">¡Iniciar Sesión!</p>
+<body id="login_verificar">
+    <div class="header normal">
+        <input type="button" class="back normal" onclick="document.location='02login_olivida.html'">
+        <p class="page normal">Verificar tu código</p>
     </div>
-    <img class="logo_eventify" src="../img/logo-eventify-text.svg"></img>
-    <input type="button" value="Soy usuario" id="user" onclick="document.location='02login_user.html'">
-    <input type="button" value="Soy Administrador" id="admin" onclick="document.location='02login_user.html'">
+    <div class="verificar">
+            <p>Rellenar con el código enviado por e-mail o SMS.</p>
+            <input type="text">
+    </div>
+    <div class="text_cuenta">
+        <h3>¿No has recibido el código? <font color="#1ED4A9" onclick="document.location='02login_olivida.html'"><i><u>Reenviar código</u></i></font></h3>
+    </div>
+    <input type="button" value="Restaurar contraseña" id="iniciar" onclick="document.location='02login_user.html'">
+   
 </body>
 </html>
