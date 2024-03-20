@@ -3,6 +3,14 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+@font-face {
+    font-family: 'Krungthep';
+    src: url('../fonts/Krungthep.woff2') format('woff2'),
+        url('../fonts/Krungthep.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body {
     background: #F7FDFD;
 }
